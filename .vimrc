@@ -1,3 +1,23 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""alexis
+"let NERDTreeQuitOnOpen = 0, find it and make it to zero
+""auto open NERDTree
+autocmd VimEnter * NERDTree
+"autocmd BufEnter * NERDTreeMirror
+"auto open NERDTree in vim
+function! StartUp() 
+    if 0 == argc()
+         NERDTree
+    end
+endfunction
+autocmd VimEnter * call StartUp()
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,ucs-bom,cp936,gbk,gb2312,big5,latin1  
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"
+
+
 " Modeline and Notes {
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
 "
